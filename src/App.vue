@@ -2,8 +2,8 @@
   <main class="page">
     <section class="hero section">
       <div class="glass">
-        <p class="eyebrow">3 месяца вместе</p>
-        <h1>Это маленький подарок для тебя ❤️</h1>
+        <p class="eyebrow">3 months</p>
+        <h1>Special for my принцесска ❤️</h1>
         <p class="subtitle">
           <!-- Я хотел сделать что-то, чего больше ни у кого нет. -->
         </p>
@@ -31,13 +31,10 @@
 
     <section class="section final">
       <div class="glass">
-        <h2>А теперь...</h2>
-        <p>
-          Игра которая была нашим мемом
-        </p>
+        <h2>Опа</h2>
 
         <a class="primary-btn" :href="gameUrl">
-          Начать игру
+          Впереди копы
         </a>
       </div>
     </section>
@@ -49,16 +46,20 @@ import { ref } from 'vue'
 
 const memoriesSection = ref(null)
 
-// ЗАМЕНИ ССЫЛКУ НА СВОЮ ИГРУ
 const gameUrl = 'https://zhenka-pechenka.ru'
 
-// ЗАМЕНИ ФОТКИ НА СВОИ
-// Положи фото, например, в public/photos/
-// Тогда путь будет: /photos/photo1.jpg
 const photos = [
+    {
+    src: '/10.jpeg',
+    caption: 'Этой фоткой я часто любовался еще до начала отношений'
+  },
+  {
+    src: '/11.jpg',
+    caption: 'А это сейчас одна из самых любимых но тебе она не нрав('
+  },
   {
     src: '/first.jpeg',
-    caption: '09.02 оба знаем что было дальше'
+    caption: '09.02'
   },
   {
     src: '/second.jpeg',
@@ -70,7 +71,7 @@ const photos = [
   },
   {
     src: '/third.jpeg',
-    caption: 'Два месяца и один день как меня впервые назвали дурилкой'
+    caption: 'Два месяца и один день как меня впервые назвали дурилкой и еще наконец-то сходили в кино'
   },
   {
     src: '/4.jpeg',
@@ -89,6 +90,11 @@ const photos = [
     src: '/8.jpeg',
     caption: 'А это моя красотка которой я любуюсь и восхищаюсь!'
   },
+    {
+    src: '/9.jpeg',
+    caption: 'Одна из последних кайфовых фоток'
+  },
+
 
 ]
 
